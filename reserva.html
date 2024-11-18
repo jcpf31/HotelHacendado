@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservas</title>
+</head>
+<body style="background-color: lightblue;">
+<h1>Haga su Reserva</h1>
+<form action="procesareserva.php"
+method="get">
+<fieldset>
+    <legend>Datos Personales</legend>
+        <p>
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" type="text"
+        name="nombre" required maxlength="100" autofocus>
+        </p>
+        <p>
+        <label for="apellidos">Apellidos:</label>
+        <input id="apellidos" type="text"
+        name="apellidos" required maxlength="100">
+        </p>
+        <p>
+        <label for="dni">Documento de Identidad:</label>
+        <input id="dni" type="text"
+        data-="dni" required maxlength="10" placeholder="DNI con letra">
+        </p>
+    </fieldset>
+    <fieldset>
+    <legend>Datos de su estancia</legend>
+        <p>
+        Habitación:
+        <input type="radio" value="simple" id="individual" name="habitacion">
+        <label for="individual">Individual</label>
+
+        <input type="radio" value="doble" id="doble" name="habitacion">
+        <label for="doble">Doble</label>
+
+        <input type="radio" value="triple" id="triple" name="habitacion">
+        <label for="triple">Triple</label>
+        </p>
+        <p>
+        <label for="numper">Número de personas:</label>
+        <select name="nump" id="numper">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        </p>
+        <p>
+        <label for="mascotas">Llevo mascotas:</label>    
+        <input type="checkbox" id="mascotas" value="mascotas">    
+        </p>
+        <p>
+        <label for="fechallegada">Fecha de llegada:</label>
+        <input type="date" value="fechaingreso" id="fechallegada">
+        <label for="fechasalida">Fecha de salida:</label>
+        <input type="date" value="fechasalida" id="fechasalida">
+        </p>
+        <p>
+        <label for="hora">Hora de llegada:</label>
+        <input type="time" value="hora" id="hora"> (hora de salida 12:00)   
+        </p>
+    </fieldset>
+<p>
+    <input type="submit" value="Enviar"> 
+    <input type="reset" value="Reiniciar">
+</p>
+</form>    
+
+<a href="index.html">Volver</a>
+</body>
+</html>
